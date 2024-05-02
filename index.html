@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Reportal | ريبورتال</title>
+</head>
+<body>
+    <header>
+        <div class="container">    
+            <nav>
+                <a href="#prices">الاسعار</a>
+                <a href="#reports">انواع التقارير</a>
+            </nav>
+            <img src="./assets/imgs/logo.png" alt="" class="logo">
+            <nav>
+                <a href="#about">من نحن</a>
+                <a href="">سجل الان</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero animate__animated animate__fadeInUp">
+            <img src="./assets/imgs/hero-bg.png" alt="bg" class="bg">
+            <div class="container">
+                <div class="text">
+                    <h1>منصة ريبورتال
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M8 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h5.697" />
+                            <path d="M18 14v4h4" />
+                            <path d="M18 11v-4a2 2 0 0 0 -2 -2h-2" />
+                            <path d="M8 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" />
+                            <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M8 11h4" />
+                            <path d="M8 15h3" />
+                          </svg>
+                    </h1>
+                    <p>
+                        هي المنصة الاولى في مصر لتقديم خدمات التقارير الخاصة بالفاتورة و الايصال الالكتروني مما يمكن عملائها من الحصول على تقارير متنوعة عن مبيعاتهم و مشترياتهم التي تمت على منظومة الفاتورة الإلكترونية الخاصة بالضرائب المصرية 
+                        كما يمكنك استخدام برنامج <span>Report Lite</span> ريبورتال لايت
+                        (لإصدار الفواتير الإلكترونية بشكل سهل)
+                    </p>
+                </div>
+                <img src="./assets/imgs/hero.png" alt="">
+            </div>
+            <div class="btns">
+                <a href="">سجل الان</a>
+                <a href="#about">اعرف المزيد</a>
+            </div>
+        </section>
+        <div id="reports" style="height: 80px;margin-top: -80px;"></div>
+        <section class="reports animate__animated animate__fadeInUp">
+            <div class="container">
+                <h1 class="sec-header">أنواع التقارير التي يقدمها البرنامج</h1>
+                <div class="switch">
+                    <button class="active report_btn" for_report="report_1">التقارير العامة</button>
+                    <button class="report_btn" for_report="report_2">تقارير المبيعات</button>
+                    <button class="report_btn" for_report="report_3">تقارير المشتريات</button>
+                    <button class="report_btn" for_report="report_4">تقارير الضرائب</button>
+                </div>
+                <div class="report-type report-1" id="report_1">
+                    <ul>
+                        <li>
+                            تقرير اجماليات فترة:
+                            <p>
+                                من خلال هذا التقرير يمكنك الحصول على اجمالي المبيعات والمشتريات قبل وبعد الخصم (التجاري والإضافي) الي جانب اجماليات الضرائب المختلفة مثل القيمة المضافة والخصم تحت حساب الضريبة من واقع الفواتير واشعارات الدائن والمدين
+                            </p>
+                        </li>
+                        <li>
+                            حزمة وثائق PDF:
+                            <p>
+                                يمكنك طلب حزمة وثائق تحتوي على جميع ملفات الـ PDF الخاصة بجميع الوثائق سواء الصادرة او المستلمة 
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report-type report-2" id="report_2">
+                    <ul>
+                        <li>
+                            فواتير تفصيلي
+                            <p>
+                                من خلال هذا التقرير يمكنك متابعة الوثائق الصادرة (فواتير بيع – اشعار دائن – اشعار مدين) لفترة معينة مع إمكانية عمل فلتر علي الفواتير المعفاة من القيمة المضافة أو التي تم تطبيق خصم (تجاري أو إضافي) عليها، ويمكن أيضا عمل فلتر على مستوي عميل ما سواء من خلال اسمه او رقم التسجيل الضريبي
+                            </p>
+                        </li>
+                        <li>
+                            ايصالات تفصيلي
+                            <p>
+                                من خلال هذا التقرير يمكنك متابعة ايصالات البيع والمرتجع لفترة معينة مع إمكانية عمل فلتر على الفواتير المعفاة من القيمة المضافة أو التي تم تطبيق خصم (تجاري أو إضافي) عليها ويمكنك عمل فلتر علي مستوي الفرع أو نقطة البيع
+                            </p>
+                        </li>
+                        <li>
+                            ملخص مبيعات – عملاء
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة عدد واجماليات التعامل مع كل عميل من واقع فواتير البيع واشعارات الدائن والمدين الصادر
+                            </p>
+                        </li>
+                        <li>
+                            ملخص مبيعات
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة حجم المبيعات التي تمت خلال فترة سواء من خلال الفواتير الالكترونية أو الايصالات 
+                            </p>
+                        </li>
+                        <li>
+                            ملخص مبيعات بالشهر
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة حجم المبيعات شهر بشهر الي جانب حجم كل من القيمة المضافة والخصم تحت حساب الضريبة في كل من الفواتير والاشعارات وايصالات البيع والمرتجع
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report-type report-3" id="report_3">
+                    <ul>
+                        <li>
+                            فواتير تفصيلي
+                            <p>
+                                من خلال هذا التقرير يمكنك متابعة الوثائق المستلمة (فواتير – اشعار دائن – اشعار مدين) لفترة معينة مع إمكانية عمل فلتر علي الفواتير المعفاة من القيمة المضافة أو التي تم تطبيق خصم (تجاري أو إضافي) عليها، ويمكن أيضا عمل فلتر على مستوي مورد ما سواء من خلال اسمه او رقم التسجيل الضريبي
+                            </p>
+                        </li>
+                        <li>
+                            ملخص مشتريات – موردين
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة عدد واجماليات التعامل مع كل مورد من واقع فواتير البيع واشعارات الدائن والمدين الصادر
+                            </p>
+                        </li>
+                        <li>
+                            ملخص مشتريات بالشهر
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة حجم المشتريات شهر بشهر الي جانب حجم كل من القيمة المضافة والخصم تحت حساب الضريبة في كل من الفواتير والاشعارات المستلمة
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="report-type report-4" id="report_4">
+                    <ul>
+                        <li>
+                            ضرائب خلال فترة - مبيعات
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة أنواع الضرائب وحجمها التي تم تطبيقها في الوثائق الصادرة (فواتير بيع – اشعار دائن – اشعار مدين) الي جانب ايصالات البيع والمرتجع
+                            </p>
+                        </li>
+                        <li>
+                            ضرائب خلال فترة - مشتريات
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة أنواع الضرائب وحجمها التي تم تطبيقها في الوثائق المستلمة (فواتير بيع – اشعار دائن – اشعار مدين).
+                            </p>
+                        </li>
+                        <li>
+                            ملخص ضرائب بالشهر – مبيعات
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة اختيار نوع ضريبة ومشاهدة حجمها خلال شهور السنة شهر بشهر من واقع الوثائق الصادرة (فواتير بيع – اشعار دائن – اشعار مدين) الي جانب ايصالات البيع والمرتجع
+                            </p>
+                        </li>
+                        <li>
+                            ملخص ضرائب بالشهر – مشتريات
+                            <p>
+                                من خلال هذا التقرير يمكنك معرفة اختيار نوع ضريبة ومشاهدة حجمها خلال شهور السنة شهر بشهر من واقع الوثائق المستلمة (فواتير بيع – اشعار دائن – اشعار مدين)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div id="about" style="height: 80px;margin-top: -80px;"></div>
+        <section class="about animate__animated animate__fadeInUp">
+            <div class="container">
+                <h1 class="sec-header">من نحن</h1>
+                <div class="content">
+                    <div class="text">
+                        <h2>شاهد المقطع الان </h2>
+                        <p>
+                            لمعرفة المزيد حول منصة ريبورتال لخدمات التقارير المتنوعة
+                            <br>
+                              (الفواتير والايصالات)
+                        </p>
+                        <div class="social">
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" />
+                                    <path d="M10 9l5 3l-5 3z" />
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg>
+                            </a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                                    <path d="M16.5 7.5l0 .01" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="">
+                        <img src="./assets/imgs/about.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div id="prices" style="height: 80px;margin-top: -80px;"></div>
+        <section class="prices animate__animated animate__fadeInUp">
+            <h1 class="sec-header">الاسعار</h1>
+            <div class="container">
+                <h2>باقات الفواتير</h2>
+                <div class="row">
+                    <div class="card">
+                        <div>570 جنية</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                            5000 - 0
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>912 جنية</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                            10,000 - 5000
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>1500 جنية</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                                <path d="M9 7l1 0" />
+                                <path d="M9 13l6 0" />
+                                <path d="M13 17l2 0" />
+                            </svg>
+                            اكثر من 10,000
+                        </div>
+                    </div>
+                </div>
+                <h2>باقات الإيصلات</h2>
+                <div class="row">
+                    <div class="card">
+                        <div>570 جنية</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-receipt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                            </svg>
+                            10,000 - 0
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>912 جنية</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-receipt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                            </svg>
+                            20,000 - 10,000
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div>1500 جنية</div>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-receipt" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                            </svg>
+                            اكثر من 20,000
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    <span>
+                        مع العلم ان تلك الاسعار تطبق من 0 إلي 24 شركة
+                    </span>
+                    <br>
+                    <span>50</span> شركة او أكثر , تحصل على <span>خصم 5%</span> 
+                    <br>
+                    <span>100</span> شركة او أكثر , تحصل على <span>خصم 15%</span> 
+                    <br>
+                    <span>150</span> شركة او أكثر , تحصل على <span>خصم 20%</span> 
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        كل الحقوق محفوظة لشركة Reportal
+    </footer>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
