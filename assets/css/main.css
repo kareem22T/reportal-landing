@@ -61,6 +61,7 @@ html {
     box-shadow: rgba(58, 119, 180, 0.4) 0px 0px 2px 0px, rgba(28, 88, 148, 0.105) 0px 8px 24px -4px;
     /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     z-index: 999999;
+    padding: 12px 0;
 }
 
 header .container {
@@ -70,32 +71,30 @@ header .container {
     align-items: center;
 }
 
-header .logo {
-    height: 100px;
-    transform: translateY(40%);
-}
-
 header .container nav {
     width: 100%;
     display: flex;
-    gap: 40px;
+    white-space: nowrap;
+    gap: 24px;
 }
 
 header .container nav:last-child {
     justify-content: end;
-
+    white-space: nowrap;
 }
 
 header .container nav a {
     color: var(--secondary-color);
-    font-size: 23px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
     font-weight: 700;
     text-decoration: none;
     transition: all .3s ease-in;
 }
 
 header .container nav a:hover {
-    color: #fff;
+    color: #ffffffe4;
 }
 
 
@@ -212,13 +211,14 @@ main {
 
 @media (max-width: 1599.98px) {
     header .container .logo {
-        height: 80px;
+        height: 50px; 
+        margin-left: 16px;
     }
     main {
         padding-top: 96px;
     }
     header .container nav a {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .hero .container .text h1 {
@@ -253,7 +253,7 @@ main {
 
 @media (max-width: 992.98px) {
     header .container .logo {
-        height: 60px;
+        height: 40px;
     }
     header .container nav a {
         font-size: 18px;
@@ -323,7 +323,7 @@ main {
         gap: 24px;
     }
     header .container .logo {
-        height: 50px;
+        height: 40px;
     }
     main {
         padding-top: 66px;
@@ -507,8 +507,6 @@ main {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding-right: 32px;
-    border-right: 4px solid white;
 }
 
 .about .social a {
@@ -967,5 +965,112 @@ footer {
     .hero .container .text p {
         font-size: 14px;
         font-weight: 600;
+    }
+}
+
+.other_urls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.other_urls a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    justify-content: center;
+    position: relative;
+    border-bottom: 3px solid var(--main-color);
+    transition: all .3s ease-in;
+
+}
+
+.other_urls a::after {
+    content: "";
+    background-color: var(--main-color);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .3s ease-out;
+}
+
+.other_urls a:hover {
+    color: #184a69;
+}
+
+.other_urls a:hover::after{
+    width: 100%;
+}
+
+.other_urls a svg {
+    width: 30px;
+    height: 30px;
+    stroke: var(--main-color);
+}
+
+.other_urls a:hover svg{
+    stroke: white;
+}
+
+
+@media (max-width: 1199.98px) {
+    .other_urls a svg {
+        width: 25px;
+        height: 25px;
+    }
+    .other_urls a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        justify-content: center;
+        position: relative;
+        border-bottom: 3px solid var(--main-color);
+        transition: all .3s ease-in;
+    }
+}
+@media (max-width: 992.98px) {
+    .other_urls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        margin-top: 8px;
+    }
+}
+@media (max-width: 575.98px) {
+    .other_urls {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        width: 90%;
+        margin: auto;
+        margin-top: 8px;
+    }
+    .other_urls a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        justify-content: center;
+        position: relative;
+        border-bottom: 3px solid var(--main-color);
+        transition: all .3s ease-in;
     }
 }
